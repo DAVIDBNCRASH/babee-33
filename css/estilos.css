@@ -30,6 +30,7 @@ body{
  }
 
 head{
+    text-align: center ;
     padding: 0;
     height: 100%;
     display: flex;
@@ -134,4 +135,213 @@ text-decoration: none;
     margin-right: 5px;
     }
 
+.gallery{
+background-color: #f2f2f2;
+}
 
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0,.5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0.6);
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+
+
+.showimage{
+transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right : 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.Redes-Sociales{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Redes-Sociales-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.Redes-Sociales-icon:hover{
+    background: #fff;
+    color: #764ba2;
+}
+
+.Redes-Sociales-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width:800px){
+   .menu-navegacion{
+    width: 50vw;
+   }
+   
+   .titulo{
+    font-size: 40px;
+   }
+
+   .contenedor-servicio img{
+    width: 80%;
+    margin-bottom: 40px;
+   }
+
+   .checklist-servicio{
+    width: 80%;
+   }
+
+   .service{
+    margin-bottom: 30px;
+   }
+
+   .agregar-imagen{
+    width: 80%;
+   }
+
+   .img-galeria{
+    width: 45%;
+   }
+   
+   .footer-content{
+    justify-content: center;
+   }
+  .social-media{
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
+  .Redes-Sociales-icon{
+    margin-left: 0;
+  }
+
+  .social-media i{
+    margin-left: 0;
+  }
+
+  .contact-us{
+    text-align: center;
+    width: 80px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 65vw;
+    }
+
+    .hamburguer{
+    top: 20px;
+    right: 20px;
+    }
+
+    .titulo{
+        font-size: 30px;
+    }
+    
+    .subtitulo{
+font-size: 30px;
+    }
+
+    .agregar-imagen{
+        width: 95%;
+    }
+
+    .img-galeria{
+        width: 95%;
+    }
+
+    .social-media{
+        width: 100%  ;
+    }
+
+    .contact-us{
+        width: 90%;
+    }
+}
